@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  
+  <title>int222_162a31 - Assignment 3 - index page </title>
+  
+  <link rel="stylesheet" href="css/normalize.css"   type="text/css" media="screen" /> 
+  <link rel="stylesheet" href="css/sitecss.css" type="text/css" media="screen" /> 
+  <script src='javascript/myscript.js' type='text/javascript'></script>
+  
+</head>
+
+<body>
+<form action='https://zenit.senecac.on.ca/~emile.ohan/cgi-bin/cardApplication.cgi' method='post' name="application" id="application" 
+				onsubmit="return validateForm();" onload="currdate();">
+    <div id="content">	   
+                  <fieldset class="set3">				 
+                   <legend class="head"><img src="https://zenit.senecac.on.ca/~emile.ohan/int222/bank-logo.png" alt="Seneca Bank" title="Seneca Bank" />Seneca Bank - Credit Card Application</legend>
+	   
+	  <div class="top">
+		  <aside class="right">
+		          <fieldset class="setr">
+                   <legend>Reserved</legend>
+					<ol id="error">
+                      <li>If you submit your application with errors and/or omissions, a list of errors and/or omissions will 
+                      show here. Make the corrections and re-submit.</li>					
+                      <li>If you continue to have a problem submitting your application, make a note of the Reference No. 
+                      and call us at 1-800-010-2000..</li>					  
+                    </ol>
+                  </fieldset> 
+		  </aside>	  
+	   <div class="lcontent">		  
+                  <fieldset class="set">
+                   <legend>Primary Applicant's Information</legend>                    
+                    <p><label class="required" for="fName">First Name </label><input type="text" name="fName" id="fName" maxlength="20" autofocus="autofocus" /></p>                        
+                    <p><label class="required" for="sName">Surname </label><input type="text" name="sName" id="sName" maxlength="30" /></p>                       
+                    <p><label class="required" for="dob">Date of Birth </label><input type="text" name="dob" id="dob" maxlength="7" size="10" placeholder="MMMYYYY" /></p>                       
+                    <p><label class="required" for="email">Email Address </label><input type="text" name="email" id="email" maxlength="60" /></p>					  
+					<p><label class="required" for="phone">Phone No. </label><input type="text" name="phone" id="phone" maxlength="12" /></p>                    
+                  </fieldset>
+				  <fieldset class="set2">
+				   <legend>Primary Applicant's Address</legend>
+                    <p><label class="required" for="address">Home Address </label><input type="text" name="address" id="address" maxlength="60" size="30" /></p>
+                    <p><label for="apt">Apt </label><input type="text" name="apt" id="apt" maxlength="4" size="5" /></p> 
+                    <p><label class="required" for="city">City </label><input type="text" name="city" id="city" maxlength="40" /></p>
+                    <p><label class="required" for="province">Province </label>
+					       <select id="province" name="province" size="2">
+							 <optgroup label="Province">							   
+							   <option value="Alberta">Alberta</option>
+							   <option value="British Columbia">British Columbia</option>
+							   <option value="Manitoba">Manitoba</option>
+							   <option value="New Brunswick">New Brunswick</option>
+							   <option value="Newfoundland & Labrador">Newfoundland & Labrador</option>
+							   <option value="Nova Scotia">Nova Scotia</option>
+							   <option value="Ontario">Ontario</option>
+							   <option value="Prince Edward Island">PE</option>
+							   <option value="Quebec">Quebec</option>
+							   <option value="Saskatchewan">Saskatchewan</option>
+							 </optgroup>
+							 <optgroup label="Territory">
+							   <option value="Northwest Territories">Northwest Territories</option>
+							   <option value="Nunavut">Nunavut</option>
+							   <option value="Yukon">Yukon</option>
+							 </optgroup>
+						   </select></p>
+					<p><label class="required" for="postal">Postal Code </label><input type="text" name="postal" id="postal" maxlength="7" size="8" placeholder="ANA NAN" /></p>                                       
+                  </fieldset>  
+	   </div>
+	   <div class="l1content">			  
+				  <fieldset class="set1">
+                   <legend>Credit Check / Email Consent</legend>
+                    <p class="txt2">I consent to have a credit check performed</p> 
+					     <input type="checkbox" name="creditCheck" id="c01" value="Yes" onclick="ChkList(this);"/>Yes
+						 <input type="checkbox" name="creditCheck" id="c02" value="No" onclick="ChkList(this);"/>No                       
+                    <p class="txt2">I consent to have email messages sent to me </p>
+					     <input type="radio" name="emailConsent" id="m01" value="Yes" />Yes  
+						 <input type="radio" name="emailConsent" id="m02" value="No" />No                       
+                    <p>Submitted on: &nbsp;<script type="text/javascript">document.write(todaysDate);</script></p>
+					<p><label for="refNo">Ref. # </label><input size="8" name="refNo" id="refNo" readonly="readonly" /></p>
+                  </fieldset>
+				  <fieldset class="set5">
+                   <legend>Housing Status</legend>
+                    <p class="txt2">Do You</p>
+            				  <input type="checkbox" name="hStatus" id="s01" value="Own" onclick="ChekList(this);"/>Own the property
+                              <input type="checkbox" name="hStatus" id="s02" value="Rent" onclick="ChekList(this);"/>Rent the property                     
+                    <p><label class="required" for="payment">$Monthly Payment </label><input size="8" name="payment" id="payment" maxlength="6" /></p> 
+                    <p><label class="required" for="income">Monthly Income </label><input size="8" name="income" id="income" maxlength="6" /></p> 
+					<p><label class="required" for="currYears">Years at current location </label><input size="3" name="currYears" id="currYears" maxlength="2" /></p>
+					<p><label for="preCode">Pre-authorized Code </label><input size="8" name="preCode" id="preCode" /></p>
+                     <input type="hidden" name="hName" id="hName" value="Verma" />
+				     <input type="hidden" name="hId" id="hId" value="int222_162a31" /> 
+                  </fieldset>			  
+	   </div>	   
+	              <p class="tile">
+                     <input class="but" type="submit" value="Submit Application" />                        
+                     <input class="but" type="reset"  value="    Start Over   " onclick='clearShowErrors(); alert("Are you sure you want to start over?")' />					 
+                  </p>
+				  <p class="note">*= Required Information</p>				 
+	   </div>	    
+	              </fieldset>	  
+    </div>    	
+
+<hr />	
+<footer>
+	<nav>
+	 <div>
+      <ul>
+         <li><a href="../">My zenit Account</a></li>
+         <li><a href="javascript/">My JavaScript</a></li> 
+         <li><a href="css/">My CSS</a></li>
+         <li><a href="honesty.html">My Honesty</a></li>         
+      </ul> 
+	 </div> 
+    </nav>
+  <script>
+      var dt=new Date(document.lastModified);   // Get document last modified date
+      document.write('This page was last updated on '+dt.toLocaleString());
+  </script>
+</footer>
+</form>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+body{ 
+          width:        1200px;
+		  height:       800px;	
+          margin:       auto; 
+          font-family:  Calibri, sans-serif; 
+          font-size:    1em; 
+          overflow-y:   scroll;
+          color:        #000000;
+          background:   #ffffff;
+}
+
+nav ul {
+	margin: 0px auto;
+    padding-top: 10px;
+}
+
+nav ul li {
+		   display: inline;           
+           padding: 25px;
+           margin-right: 25px;
+}
+
+
+footer  {
+          width:1190px;
+          border-radius:5px;
+          background:#cccccc;
+          color:#000000;
+          border:1px solid #ccccdd;
+          position:absolute;
+          text-align:center; 
+          font-weight:bold;
+          display:inline;
+          margin: 0px auto;
+}
+
+#content {
+    display: table;
+    margin-top: 2px;
+    width: 1200px;
+}
+
+.top{
+	width:1200px;
+}
+
+
+
+.lcontent {
+    display: table;
+    width: 510px;
+	float:left;	
+}
+
+.l1content {
+    display: table;
+    width: 400px;	
+}
+
+
+.set {
+    border: 4px outset #5f5f5f;
+    padding: 10px 2px;
+    margin-bottom: 4px;
+	width: 500px;
+	height:251px;
+}
+
+.set2 {
+    border: 4px outset #5f5f5f;
+    padding: 10px 2px;
+    margin-bottom: 4px;
+	width: 500px;
+	height:270px;
+}
+
+.setr {
+    border: 4px outset #5f5f5f;
+    padding: 10px 2px;
+    margin-bottom: 4px;	
+	height: 553px;
+	overflow-y: scroll;
+}
+
+.right{
+	float:right;
+}
+
+.set3 {
+    border: 4px outset #5f5f5f;
+    padding: 10px 2px;    
+	}
+
+.set1 {
+    border: 4px outset #5f5f5f;
+    padding: 10px 2px;
+    margin-bottom: 4px;
+	height:251px;
+}
+
+.set5 {
+    border: 4px outset #5f5f5f;
+    padding: 10px 2px;
+    margin-bottom: 4px;
+	height:270px;
+}
+
+
+legend {
+    border: 4px groove #000000;
+    background-color: #ff2d2d;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 3px;    	
+}
+
+.head{	
+	margin-left: 40%;
+	position: relative;
+	text-align: center;
+}
+
+.required:after {
+    color: #ff0000;
+	background-color:#ffffff;
+    content: '*';
+}
+
+label { 	
+        cursor:          pointer; 
+	display:         block;
+	float:           left;
+	font-size:       16px;	
+	line-height:     14px; 
+	margin-bottom:   3px;
+	width:           190px;
+}
+
+p {
+    text-align: justify;
+}
+p {
+    margin: 0.33em 0 1em 0;
+}
+
+.tile{
+	text-align:center;	
+}
+
+.but{
+	background-color:#000000;
+	border-color:#ff0000;
+	color:#ffffff;
+	border-radius:3px;
+}
+
+aside {    
+    display: table-cell;
+    width: 283px;   
+}
+
+.note{	
+	text-align:center;
+	color:#ff0000;
+	background-color:#ffffff;	
+}
+
+.txt {background-color:#ddddff; color:#ff3300; font-family:"Times New Roman", serif;}	
+.txt2{font-weight: bold;}	  
+ 
